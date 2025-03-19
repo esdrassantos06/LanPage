@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
+@theme{
+  --color-background: #0F172A;
+  --color-header: #181E2B;
+  --color-Purple: #9333EA;
+  --color-newPurple: #581C87;
+}
