@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} min-h-screen w-full flex flex-col bg-background`}  suppressHydrationWarning
+        className={`${inter.className} min-h-screen antialiased w-full flex flex-col bg-background`}  suppressHydrationWarning
       >
         <Header />
         <div className="flex-1">{children}</div>

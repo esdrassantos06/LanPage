@@ -16,7 +16,7 @@ export default function Header() {
           </ul>
         </nav>
       </div>
-      <div className="flex gap-4">
+      <div className="flex select-none gap-4">
         <button className="cursor-pointer px-4 py-2 rounded-md border-transparent border transition-all duration-300 hover:border-Purple ">Log in</button>
         <button className="cursor-pointer px-4 py-2 rounded-md bg-Purple hover:bg-newPurple transition-colors duration-300">Join Now</button>
       </div>

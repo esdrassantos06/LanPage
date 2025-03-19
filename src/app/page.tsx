@@ -1,6 +1,9 @@
+"use client";
+
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import Companies from "@/components/companies/Companies";
+import { ArrowRight } from "@phosphor-icons/react";
 
 export default function Home() {
   return (
@@ -33,7 +36,7 @@ export default function Home() {
         </div>
 
         <Image
-          className="rounded-md size-full"
+          className="rounded-md object-cover size-full"
           src={"/Desktop-App-Placeholder-1.png"}
           alt="Desktop App"
           width={1500}
@@ -45,6 +48,48 @@ export default function Home() {
           Join Leading Companies
         </h1>
         <Companies />
+      </div>
+
+      <div className="text-white w-full flex md:flex-row flex-col mt-20 flex-wrap items-center justify-center h-160">
+        <div className="flex flex-col flex-1/2 gap-8 justify-center items-center">
+          <div className="text-start self-start">
+            <h2 className="uppercase font-semibold tracking-widest">
+              Discover
+            </h2>
+            <h1 className="flex flex-col text-nowrap self-start items-start gap-2 text-6xl font-bold">
+              <div className="flex gap-4">
+                <span className="text-[#C084FC]">Unlimited</span>
+                <span className="relative size-full before:absolute before:text-nowrap text-nowrap before:-z-1 before:h-full before:w-[90%] before:-left-2 before:border-4 before:border-[#C2410C]">
+                  ideas
+                </span>
+                <span>for your</span>
+              </div>
+
+              <span className="text-6xl font-bold">next great projects</span>
+            </h1>
+          </div>
+
+          <p className="w-[60%] self-start text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            laoreet tincidunt ex at iaculis. Pellentesque malesuada lacus nec
+            mauris egestas lacinia.
+          </p>
+
+          <button className="flex self-start items-center cursor-pointer select-none text-white">
+            <span className="flex items-center gap-3">
+              Discover Ideas <ArrowRight weight="bold" size={18} />
+            </span>
+          </button>
+        </div>
+        <div className="flex-1/2 flex items-center h-full w-full justify-center">
+          <Image
+            src={"/Shapes.png"}
+            alt="Shapes"
+            width={300}
+            height={300}
+            className="object-cover w-full h-full sm:w-75 sm:h-75"
+          />
+        </div>
       </div>
     </Layout>
   );
