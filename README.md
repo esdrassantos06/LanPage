@@ -52,9 +52,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 │   │   ├── layout.tsx  # Root layout
 │   │   └── page.tsx    # Homepage
 │   └── components/     # Reusable components
-│       ├── Footer.tsx
-│       ├── Header.tsx
-│       └── Layout.tsx
 └── ...config files
 ```
 

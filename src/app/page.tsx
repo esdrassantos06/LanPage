@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import Image from "next/image";
+import Companies from "@/components/companies/Companies";
 
 export default function Home() {
   return (
@@ -23,11 +24,27 @@ export default function Home() {
         </p>
 
         <div className="flex text-white mb-8 gap-3">
-          <button className="cursor-pointer bg-Purple hover:bg-newPurple duration-300 transition-colors px-7 rounded-md py-2.5">Join Now</button>
-          <button className="cursor-pointer border-2 duration-300 transition-colors hover:bg-white/10 border-white px-7 rounded-md py-2.5">View Demo</button>
+          <button className="cursor-pointer bg-Purple hover:bg-newPurple duration-300 transition-colors px-7 rounded-md py-2.5">
+            Join Now
+          </button>
+          <button className="cursor-pointer border-2 duration-300 transition-colors hover:bg-white/10 border-white px-7 rounded-md py-2.5">
+            View Demo
+          </button>
         </div>
 
-        <Image className="rounded-md size-full" src={"/Desktop-App-Placeholder-1.png"} alt="Desktop App" width={1500} height={1500} />
+        <Image
+          className="rounded-md size-full"
+          src={"/Desktop-App-Placeholder-1.png"}
+          alt="Desktop App"
+          width={1500}
+          height={1500}
+        />
+      </div>
+      <div className="flex flex-col items-center mt-20 justify-center gap-8">
+        <h1 className="font-bold text-white text-5xl">
+          Join Leading Companies
+        </h1>
+        <Companies />
       </div>
     </Layout>
   );
