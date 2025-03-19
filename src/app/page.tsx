@@ -8,7 +8,7 @@ import { ArrowRight } from "@phosphor-icons/react";
 export default function Home() {
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-center gap-8">
+      <section className="flex flex-col items-center justify-center gap-8">
         <h1 className="flex gap-4 text-6xl font-bold text-white">
           Design
           <span className="underline decoration-5 underline-offset-8 decoration-[#C084FC]">
@@ -42,15 +42,16 @@ export default function Home() {
           width={1500}
           height={1500}
         />
-      </div>
-      <div className="flex flex-col items-center mt-20 justify-center gap-8">
+      </section>
+
+      <section className="flex flex-col items-center mt-20 justify-center gap-8">
         <h1 className="font-bold text-white text-5xl">
           Join Leading Companies
         </h1>
         <Companies />
-      </div>
+      </section>
 
-      <div className="text-white w-full flex md:flex-row flex-col mt-20 flex-wrap items-center justify-center h-160">
+      <section className="text-white w-full flex md:flex-row flex-col mt-20 flex-wrap items-center justify-center h-160">
         <div className="flex flex-col flex-1/2 gap-8 justify-center items-center">
           <div className="text-start self-start">
             <h2 className="uppercase font-semibold tracking-widest">
@@ -90,7 +91,7 @@ export default function Home() {
             className="object-cover w-full h-full sm:w-75 sm:h-75"
           />
         </div>
-      </div>
+      </section>
     </Layout>
   );
 }
