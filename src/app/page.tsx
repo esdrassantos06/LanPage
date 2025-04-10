@@ -35,13 +35,16 @@ export default function Home() {
           </button>
         </div>
 
+        <div className="relative size-full">
+          <div className="absolute size-full z-10"></div>
         <Image
-          className="rounded-md object-cover size-full"
+          className="rounded-md select-none pointer-events-none object-cover size-full"
           src={"/Desktop-App-Placeholder-1.png"}
           alt="Desktop App"
           width={1500}
           height={1500}
         />
+        </div>
       </section>
 
       <section className="flex flex-col items-center mt-20 justify-center gap-8">
@@ -77,18 +80,19 @@ export default function Home() {
           </p>
 
           <button className="flex self-start items-center cursor-pointer select-none text-white">
-            <span className="flex items-center gap-3">
-              Discover Ideas <ArrowRight weight="bold" size={18} />
+            <span className="flex items-center group font-semibold gap-3">
+              Discover Ideas <ArrowRight weight="bold" className="group-hover:translate-x-1 transition-transform duration-300" size={18} />
             </span>
           </button>
         </div>
-        <div className="flex-1/2 flex items-center h-full w-full justify-center">
+        <div className="flex-1/2 relative flex items-center h-full w-full justify-center">
+          <div className="absolute size-full z-10"></div>
           <Image
             src={"/Shapes.png"}
             alt="Shapes"
             width={300}
             height={300}
-            className="object-cover w-full h-full sm:w-75 sm:h-75"
+            className="object-cover select-none pointer-events-none size-95"
           />
         </div>
       </section>
